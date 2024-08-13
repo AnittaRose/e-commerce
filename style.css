@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: rgb(252,93,53);
+    color: white;
+    padding: 10px;
+    border: none;
+}
+.sec{
+    font-size: 16px;
+}
+.line{
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 400px;
+    Line-height: 24px;
+    color: rgb(52, 52, 52);
+}
+.search{
+    width: 25px;
+}
+
+.img{
+    text-align: center;
+}
+.section2{
+    width: 50%;
+    margin-left: 15px;
+}
+.more{
+    background-color: black;
+    color: aliceblue;
+    font-size: 18px;
+    border-color: black;
+}
+
