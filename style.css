@@ -35,4 +35,43 @@
     font-size: 18px;
     border-color: black;
 }
+.cart{
+    border-color: rgb(255,193,7);
+    border: none;
+}
+.hi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+    
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 10%;
+    
+    
+}
+.keychain{
+    width: 30%;
+    /* gap: 10px; */
+    margin-left: 10px;
+    
+}
+.hardy{
+    font-size: 20px;
+}
+.key{
 
+    width: 80%;
+    margin-left: 10px;
+    /* overflow: hidden; */
+}
+#womens{
+    display: grid;
+    grid-template-columns: repeat(4,345px);
+}
+#electronics{
+    display: grid;
+    grid-template-columns: repeat(4,345px);
+}

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style.css">
     <title>tropika</title>
   </head>
-  <body>
+  <body onload=userdatas()>
   
     <div class="section container d-flex justify-content-between align-item-center pt-3">
         <div class=" text-uppercase fw-bold fs-4">
@@ -42,99 +42,158 @@
     </div>
 
 
+  <!-- <div id="hi"></div> -->
 
-    <div class="">
-
-      <div id="carouselExampleControls" class="carousel slide w-100" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="d-flex justify-content-between p-5 container align-items-center">
-                    <h1 id="text" class="w-50"></h1>
-                    <div id="image" class="p-5"></div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-between p-5 container align-items-center">
-                    <h1 id="text2" class="w-50 fw-bold"></h1>
-                    <div id="image2"></div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-between p-5 container align-items-center">
-                    <h1 id="text3" class="w-50 fw-bold"></h1>
-                    <div id="image3"></div>
-                </div>
-            </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+      <div class="carousel-inner " id="carousel-inner1">
+        
+        <!-- <div class="carousel-item active">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div> -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon " aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+
+    <div class="bg-light">
+      <div class="fs-1 fw-bold container pt-5 p-4">
+        Jeweleries
+      </div>
+      <div class="jel d-flex container pt-5" id="jewelery"></div>
+
+      <div class="fs-1 fw-bold container pt-5 p-4">
+        Women's Cloths
+      </div>
+
+      <div class="wom  container pt-5 " id="womens"></div>
+      <div class="fs-1 fw-bold container pt-5 p-4">
+        Electronics
+      </div>
+
+      <div class="electrics container pt-5" id="electronics"></div>
+    </div>
+      
+
+
+
+
+    <!-- <div class="text-center pt-3 pb-3"><button class="more p-2 px-2 fw-bold">More Products</button></div>
+
+
+    <div class="container-fluid  pt-5 bg-dark">
+          <div class="col-lg-8 mt-5">
+            <div class="row">
+              <div class="col"><div class="row"><div class="col-lg-6 mt-2 pb-2">
+                <div class="row text-secondary">
+                  <h5>ABOUT</h5>
+                </div>
+                <div class="row text-light pb-2">
+                  <h6><b>contact us</b></h6>
+                </div>
+                <div class="row text-light pb-2">
+                  <h6><b>About us</b></h6>
+                </div>
+                <div class="row text-light pb-2">
+                  <h6><b>carrers</b></h6>
+                </div>
+                <div class="row text-light pb-2">
+                  <h6><b>Tropiko Stories</b></h6>
+                </div>
+                <div class="row text-light pb-2">
+                    <h6><b>press</b></h6>
+                </div>
+                <div class="row text-light pb-2">
+                    <h6><b>coporate information</b></h6>
+                </div>
+
+                
+              </div>
+              <div class="col-lg-6 mt-2">
+                <div class="row text-secondary">
+                  <h5>HELP</h5>
+                </div>
+                <div class="row text-light pb-2">
+                  <h6>payments</h6>
+                </div>
+                <div class="row text-light pb-2">
+                  <h6>shiping</h6>
+                </div>
+                <div class="row text-light pb-2">
+                    <h6>cancellation & returns</h6>
+                </div>
+                <div class="row text-light pb-2">
+                    <h6>FAQ</h6>
+                </div>
+                <div class="row text-light pb-2">
+                    <h6>Reporting infringement</h6>
+                </div>
+              </div></div></div>
+
+
+
+              <div class="col mx-5"><div class="row"><div class="col-lg-6 mt-2">
+                <div class="row text-secondary">
+                  <h5>CONSUMER POLICE</h5>
+                </div>
+                <div class="row text-light pb-2">
+                  <h6>cancellation & Returns</h6>
+                </div>
+                <div class="row text-light pb-2">
+                  <h6>Terms of Use</h6>
+                </div>
+                <div class="row text-light pb-2">
+                    <h6>security</h6>
+                </div>
+                <div class="row text-light pb-2">
+                    <h6>privacy</h6>
+                </div>
+                <div class="row text-light pb-2">
+                    <h6>EPR Compliance</h6>
+                </div>
+
+
+
+                
+              </div>
+              <div class="col-lg-6 mt-2">
+                <div class="row text-secondary pb-2">
+                  <h5>CONNECT WITHUS</h5>
+                </div>
+                <div class="row text-light pb-2">
+                  <h6>Facebook</h6>
+                </div>
+                <div class="row text-light pb-2">
+                  <h6>Instagram</h6>
+                </div>
+                <div class="row text-light pb-2">
+                    <h6>Twitter</h6>
+                </div>
+              </div></div></div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+    </div> -->
     
 
-    </div>
-    <div class="d-flex justify-content-center align-item-center">
-        <div class="section2 shadow p-3 mb-5 bg-body rounded  border-2 ">
-            
-            <div class="text-center"><img class="img " src="" style="width:100px; height: 176px; " alt="Product Image"></div>
-
-            <div class="title fs-4 pt-3 text-center fw-bold link-danger" ></div>
-            <div class="description pt-3 text-center link-success"></div>
-            <div class="price pt-3 text-center link-secondary"></div>
-        </div>
-
-        <div class="section2 shadow p-3 mb-5 bg-body rounded border-2">
-            
-            <div class="text-center"><img class="img1" src="" style="width:100px; height: 176px;" alt="Product Image"></div>
-            <div class="title fs-4 pt-3 text-center fw-bold link-danger"></div>
-            <div class="description pt-3 text-center link-success"></div>
-            <div class="price pt-3 text-center link-secondary"></div>
-        </div>
-
-        <div class="section2 shadow p-3 mb-5 bg-body rounded border-2">
-            
-            <div class="text-center"><img class="img2" src="" style="width:100px; height: 176px;" alt="Product Image"></div>
-            <div class="title fs-4 pt-3 text-center fw-bold link-danger"></div>
-            <div class="description pt-3 text-center link-success"></div>
-            <div class="price pt-3 text-center link-secondary"></div>
-        </div>
-    </div>
-
-
-
-    <div class="d-flex justify-content-center align-item-center">
-        <div class="section2 shadow p-3 mb-5 bg-body rounded  border-2 ">
-            
-            <div class="text-center"><img class="img3 " src="" style="width:100px; height: 176px; " alt="Product Image"></div>
-
-            <div class="title fs-4 pt-3 text-center fw-bold link-danger" ></div>
-            <div class="description pt-3 text-center link-success"></div>
-            <div class="price pt-3 text-center link-secondary"></div>
-        </div>
-
-        <div class="section2 shadow p-3 mb-5 bg-body rounded border-2">
-            
-            <div class="text-center"><img class="img4" src="" style="width:100px; height: 176px;" alt="Product Image"></div>
-            <div class="title fs-4 pt-3 text-center fw-bold link-danger"></div>
-            <div class="description pt-3 text-center link-success"></div>
-            <div class="price pt-3 text-center link-secondary"></div>
-        </div>
-
-        <div class="section2 shadow p-3 mb-5 bg-body rounded border-2">
-            
-            <div class="text-center"><img class="img5" src="" style="width:100px; height: 176px;" alt="Product Image"></div>
-            <div class="title fs-4 pt-3 text-center fw-bold link-danger"></div>
-            <div class="description pt-3 text-center link-success"></div>
-            <div class="price pt-3 text-center link-secondary"></div>
-        </div>
-    </div>
-
-    <div class="text-center"><button class="more p-2 px-2 fw-bold">More Products</button></div>
 
 
         
