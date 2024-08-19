@@ -231,11 +231,17 @@ function handleClick(id){
         let section5 =document.getElementById('img4');
         section5.innerHTML=`<img src="${parsed_userData.image}" style="width:300px; height:300px;">`
 
+        let section6 = document.getElementById('fourth');
+        section6.innerHTML=`$ ${parsed_userData.price}`
 
+        let section7 = document.getElementById('fifth');
+        section7.innerHTML=`Rating- ${parsed_userData.rating.rate}`
+
+        let section8 = document.getElementById('sixth');
+        section8.innerHTML=`Count- ${parsed_userData.rating.count}`
         }
         }
 
     }
-
+ }
     
-}

@@ -75,3 +75,9 @@
     display: grid;
     grid-template-columns: repeat(4,345px);
 }
+.view-section{
+    padding: 100px;
+}
+#first,#second{
+    width: 700px;
+}
